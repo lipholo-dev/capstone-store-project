@@ -1,0 +1,39 @@
+/* Products.css */
+
+/* Adjusted margin-top to position just below the header */
+.products-container {
+  margin-top: 0rem;
+}
+
+/* Styling for card titles */
+.card-title {
+  font-size: 1.2rem; /* Larger font size for titles */
+  font-weight: bold; /* Bold font weight for emphasis */
+}
+
+/* Styling for card text */
+.card-text {
+  font-size: 0.9rem; /* Smaller font size for description text */
+}
+
+/* Cursor style for dropdown items */
+.dropdown-item {
+  cursor: pointer; /* Set cursor to pointer for better UX */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1rem; /* Adjust font size for card titles on smaller screens */
+  }
+
+  .card-text {
+    font-size: 0.8rem; /* Adjust font size for card text on smaller screens */
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%; /* Full width for buttons on smaller screens */
+    margin-bottom: 1rem; /* Add space between buttons on smaller screens */
+  }
+}

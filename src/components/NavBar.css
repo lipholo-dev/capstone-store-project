@@ -1,0 +1,100 @@
+/* Navbar styling */
+.navbar-container {
+  position: fixed; /* Fixed position at the top of the viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #343a40; /* Dark background color */
+  color: #ffffff; /* White text color */
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Center vertically */
+  padding: 0.5rem 1rem; /* Padding around content */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.logo {
+  width: 10px; /* Adjust based on your actual logo size */
+  height: 10px; /* Adjust based on your actual logo size */
+  /* Ensure to set actual logo image or text */
+}
+
+/* Navigation links */
+.nav-links ul {
+  list-style-type: none; /* Remove default list styling */
+  display: flex; /* Display links in a row */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 1rem; /* Space between navigation items */
+}
+
+.nav-item a {
+  text-decoration: none; /* Remove underline from links */
+  color: #ffffff; /* White text color */
+  padding: 0.5rem; /* Padding around text */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-item a:hover {
+  color: #f8f9fa; /* Lighter color on hover */
+}
+
+/* Active link styling */
+.nav-item.active a {
+  color: rgb(255, 0, 0); /* Red color for active link */
+}
+
+/* Logout button */
+.logout-btn {
+  width: 100px; /* Fixed width for logout button */
+  background-color: transparent; /* Transparent background */
+  color: #ffffff; /* White text color */
+  border: 1px solid #ffffff; /* White border */
+  padding: 0.5rem 0.75rem; /* Padding inside button */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  border-radius: 100px; /* Rounded border */
+}
+
+.logout-btn:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #343a40; /* Dark text color on hover */
+}
+
+/* Adjust content padding to accommodate fixed header */
+.content-container {
+  padding-top: 10px; /* Adjust as needed based on header height */
+  /* Additional styling for centering content vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0.5rem; /* Reduce padding on smaller screens */
+  }
+
+  .nav-links ul {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: center; /* Center align links */
+  }
+
+  .nav-item {
+    margin-right: 0; /* Remove margin between stacked items */
+    margin-bottom: 0.5rem; /* Add spacing between stacked items */
+  }
+
+  .logout-btn {
+    width: auto; /* Allow logout button to adjust width */
+    padding: 0.5rem 1rem; /* Adjust padding for smaller button */
+  }
+
+  .content-container {
+    padding-top: 50px; /* Reduce padding for smaller header */
+  }
+}

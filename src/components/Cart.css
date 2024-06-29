@@ -1,0 +1,82 @@
+/* Cart.css */
+
+/* Main container for the Cart page */
+.cart-page {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Column layout */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  background-color: transparent; /* Transparent background */
+}
+
+/* Container with fluid width */
+.container-fluid {
+  max-width: 1200px; /* Maximum width */
+  width: 100%; /* Full width */
+  padding: 0 15px; /* Horizontal padding */
+}
+
+/* Heading style for the Cart page */
+.cart-heading {
+  text-align: center; /* Center aligned text */
+  margin-bottom: 30px; /* Space below the heading */
+}
+
+/* Style for the empty cart message */
+.empty-cart-message {
+  text-align: center; /* Center aligned text */
+}
+
+/* Row style for cart items */
+.row {
+  margin-top: 20px; /* Space above the row */
+}
+
+/* Card style for individual cart items */
+.card {
+  border: 1px solid #ddd; /* Border color and style */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Style for the top image in the card */
+.card-img-top {
+  border-top-left-radius: 8px; /* Rounded top left corner */
+  border-top-right-radius: 8px; /* Rounded top right corner */
+}
+
+/* Body of the card */
+.card-body {
+  padding: 1rem; /* Padding inside the card body */
+}
+
+/* Title style inside the card */
+.card-title {
+  font-size: 1.2rem; /* Font size for the title */
+  font-weight: bold; /* Bold font weight */
+}
+
+/* Text style inside the card */
+.card-text {
+  color: #555; /* Text color */
+}
+
+/* Container for cart actions (buttons) */
+.cart-actions {
+  margin-top: 20px; /* Space above the cart actions */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Style for buttons inside cart actions */
+.cart-actions button {
+  margin-left: 10px; /* Space to the left of the button */
+  width: 10vw; /* Width of the button */
+}
+
+/* Media query for smaller screens (max width 768px) */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px; /* Space below the card */
+  }
+}

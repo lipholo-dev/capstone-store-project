@@ -1,0 +1,70 @@
+.homepage-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+
+.content-left {
+  flex: 1;
+  height: 70vh; /* Set height for content area */
+}
+
+.discount-heading {
+  font-size: 50px; /* Large font size for heading */
+}
+
+.discount-title {
+  color: #ff6600; /* Blue color for title */
+  font-size: 50px; /* Large font size for title */
+}
+
+.discount-subtitle {
+  color: #000000; /* Black color for subtitle */
+  font-size: inherit; /* Inherit font size */
+}
+
+.discount-description {
+  margin-top: 20px; /* Space above description */
+}
+
+.cta-buttons {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.image-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end; /* Align image to the right on larger screens */
+  align-items: center;
+}
+
+.person-image {
+  height: 100%; /* Adjust to fill the container height */
+  max-width: 100%; /* Ensure image does not exceed container width */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .homepage-container {
+    flex-direction: column; /* Stack items vertically */
+    padding: 50px; /* Reduce padding */
+    text-align: center; /* Center align text */
+  }
+
+  .content-left,
+  .image-right {
+    flex: auto; /* Take full width */
+    margin-bottom: 50px; /* Space between sections */
+    height: auto; /* Auto height */
+  }
+
+  .discount-title {
+    font-size: 40px; /* Decrease font size */
+  }
+
+  .discount-subtitle {
+    font-size: 18px; /* Decrease font size */
+  }
+}

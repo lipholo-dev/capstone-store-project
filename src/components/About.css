@@ -1,0 +1,82 @@
+/* About.css */
+
+/* Main container for the About page */
+.about-page {
+  margin-top: 0vh; /* No top margin */
+  padding: 2rem; /* Padding around the content */
+  background-color: transparent; /* Transparent background */
+  min-height: calc(100vh - 56px); /* Minimum height adjusted for header */
+}
+
+/* Container for About content with max width */
+.about-content {
+  max-width: 1000px; /* Maximum width of the content */
+  margin: 0 auto; /* Center alignment */
+}
+
+/* Heading style for the About section */
+.about-heading {
+  font-size: 2rem; /* Font size for heading */
+  text-align: center; /* Center aligned text */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Description style for the About section */
+.about-description {
+  font-size: 1.1rem; /* Font size for description */
+  line-height: 1.6; /* Line height for readability */
+  margin-bottom: 30px; /* Space below the description */
+}
+
+/* Image container style for the About section */
+.about-image {
+  margin-bottom: 30px; /* Space below the image */
+  text-align: center; /* Center aligned image */
+}
+
+/* Style for the caption under the image */
+.figure-caption {
+  text-align: center; /* Center aligned text */
+  font-style: italic; /* Italic style for caption */
+}
+
+/* Container for additional content section */
+.additional-content {
+  margin-top: 50px; /* Space above the additional content */
+}
+
+/* Heading style for the additional content section */
+.additional-heading {
+  font-size: 2rem; /* Font size for additional heading */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+/* Description style for the additional content section */
+.additional-description {
+  font-size: 1.1rem; /* Font size for description */
+  line-height: 1.6; /* Line height for readability */
+  margin-bottom: 30px; /* Space below the description */
+}
+
+/* Style for the explore button */
+.explore-btn {
+  display: block; /* Block level element */
+  margin: 0 auto; /* Center alignment */
+  width: 200px; /* Width of the button */
+  font-size: 1.2rem; /* Font size of the button text */
+  border-radius: 20px; /* Rounded corners */
+}
+
+/* Media query for smaller screens (max width 768px) */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 2rem; /* Adjusted font size for heading */
+  }
+  .about-description {
+    font-size: 1rem; /* Adjusted font size for description */
+  }
+  .explore-btn {
+    font-size: 1rem; /* Adjusted font size for button text */
+    width: 150px; /* Adjusted width of the button */
+  }
+}

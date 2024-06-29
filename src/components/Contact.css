@@ -1,0 +1,75 @@
+/* Main container for the Contact page */
+.contact-page {
+  padding: 2rem; /* Padding around the content */
+  background-color: transparent; /* Transparent background */
+  min-height: calc(100vh - 56px); /* Adjust height considering Navbar height */
+  width: 100vw; /* Full viewport width */
+  display: flex; /* Flexbox layout */
+  flex-direction: row; /* Row layout */
+}
+
+/* Container for the contact content */
+.contact-content {
+  width: 40vw; /* Width of the contact content */
+  height: 65vh; /* Height of the contact content */
+  margin: 0 auto; /* Center alignment */
+  padding: 2rem; /* Padding inside the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 90px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Heading style in the description container */
+.description-container h3 {
+  margin-bottom: 1.5rem; /* Space below the heading */
+  font-size: 18px; /* Font size for the heading */
+}
+
+/* Style for the contact image */
+.contact-image {
+  max-width: 100%; /* Maximum width */
+  height: auto; /* Auto height */
+  margin-top: 0rem; /* No top margin */
+}
+
+/* Style for form groups */
+.form-group {
+  margin-bottom: 1.5rem; /* Space below the form group */
+  background-color: aqua; /* Background color */
+}
+
+/* Container for buttons */
+.button-container {
+  margin-top: 2vh; /* Space above the buttons */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center alignment */
+}
+
+/* Style for buttons inside the button container */
+.button-container button {
+  margin-right: 10px; /* Space to the right of the button */
+}
+
+/* Container for the description */
+.description-container {
+  width: 50vw; /* Width of the description container */
+}
+
+/* Media query for smaller screens (max width 768px) */
+@media (max-width: 768px) {
+  .contact-page {
+    flex-direction: column; /* Column layout for smaller screens */
+    align-items: center; /* Center align items */
+  }
+  .contact-content,
+  .description-container {
+    width: 90vw; /* Full width for smaller screens */
+    margin: 1rem 0; /* Margin around the content */
+  }
+  .button-container {
+    flex-direction: column; /* Column layout for buttons */
+  }
+  .button-container button {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add bottom margin */
+  }
+}
