@@ -45,7 +45,7 @@ const Contact = () => {
   // Function to handle sending a message via WhatsApp
   const handleSendWhatsapp = () => {
     window.open(
-      `https://api.whatsapp.com/send?phone=+26659542362&text=${encodeURIComponent(
+      `https://api.whatsapp.com/send?phone=0027799008449&text=${encodeURIComponent(
         message
       )}`
     );
@@ -53,9 +53,7 @@ const Contact = () => {
 
   // Function to handle sending a message via Facebook
   const handleSendFacebook = () => {
-    window.open(
-      "https://www.facebook.com/profile.php?id=100092022853358&mibextid=ZbWKwL"
-    );
+    window.open("https://web.facebook.com/profile.php?id=100068827675227");
   };
 
   // Function to open the error modal with a specific error message

@@ -5,7 +5,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom"; // Use navigate hook for navigation
 import { Formik, Form, Field, ErrorMessage } from "formik"; // Formik components for form handling
 import * as Yup from "yup"; // Yup for form validation
-import "../styles/LoginPage.css"; // Import CSS file for styling
+import "./LoginPage.css"; // Import CSS file for styling
 
 // Define the LoginPage component
 const LoginPage = () => {

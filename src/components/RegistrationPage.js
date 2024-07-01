@@ -4,7 +4,7 @@
 import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik"; // Formik components for form handling
 import * as Yup from "yup"; // Yup for form validation
-import "../styles/RegistrationPage.css"; // Import CSS for styling
+import "./RegistrationPage.css"; // Import CSS for styling
 
 // RegistrationPage component
 const RegistrationPage = () => {

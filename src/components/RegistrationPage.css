@@ -1,18 +1,10 @@
-/* src/styles/RegistrationPage.css */
-
-.container {
+.registration-form {
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 5px;
   background-color: #f9f9f9;
-}
-
-.header {
-  font-size: 1.5em;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .form-group {
@@ -24,21 +16,23 @@ label {
   margin-bottom: 5px;
 }
 
-input {
+input[type='text'],
+input[type='email'],
+input[type='password'] {
   width: 100%;
   padding: 8px;
-  box-sizing: border-box;
+  font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 button {
-  width: 100%;
-  padding: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
   background-color: #007bff;
-  color: white;
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -48,5 +42,6 @@ button:hover {
 
 .error {
   color: red;
-  font-size: 0.9em;
+  font-size: 12px;
+  margin-top: 5px;
 }
