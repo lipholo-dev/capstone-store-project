@@ -17,6 +17,14 @@ const NavBar = () => {
     navigate("/main"); // Redirect to the login page
   };
 
+  // Define navigation links
+  const navLinks = [
+    { to: "/products", text: "Products" },
+    { to: "/about", text: "About Us" },
+    { to: "/contact", text: "Contact Us" },
+    { to: "/cart", text: "My Cart" },
+  ];
+
   // Hide NavBar on specific pages
   if (
     location.pathname === "/login" ||
@@ -40,19 +48,15 @@ const NavBar = () => {
       {/* Navigation Links */}
       <nav className="nav-links">
         <ul>
-          {/* NavItem components for each navigation link */}
-          <NavItem to="/products" currentPath={location.pathname}>
-            Products
-          </NavItem>
-          <NavItem to="/about" currentPath={location.pathname}>
-            About Us
-          </NavItem>
-          <NavItem to="/contact" currentPath={location.pathname}>
-            Contact Us
-          </NavItem>
-          <NavItem to="/cart" currentPath={location.pathname}>
-            My Cart
-          </NavItem>
+          {/* Mapping over navLinks array to dynamically render NavItem components */}
+          {navLinks.map((link, index) => (
+            <NavItem
+              key={index}
+              to={link.to}
+              currentPath={location.pathname}
+              text={link.text}
+            />
+          ))}
         </ul>
       </nav>
 
@@ -74,14 +78,13 @@ const NavBar = () => {
 };
 
 // Custom NavItem component to handle active link styling
-const NavItem = ({ to, currentPath, children }) => {
+const NavItem = ({ to, currentPath, text }) => {
   const isActive = currentPath === to; // Check if the current path matches the link
   const linkClass = isActive ? "active" : ""; // Apply "active" class if isActive is true
 
   return (
     <li className={`nav-item ${linkClass}`}>
-      <Link to={to}>{children}</Link>{" "}
-      {/* Link component from react-router-dom */}
+      <Link to={to}>{text}</Link> {/* Link component from react-router-dom */}
     </li>
   );
 };
