@@ -1,14 +1,15 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom for navigation
 import { useNavigate } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "./LoginPage.css";
-import ErrorPopup from "./ErrorPopup"; // Import ErrorPopup component
+import ErrorPopup from "./ErrorPopup";
 
 const LoginPage = () => {
   const navigate = useNavigate();
-  const [showError, setShowError] = useState(false); // State to control error popup visibility
-  const [errorMessage, setErrorMessage] = useState(""); // State to store error message
+  const [showError, setShowError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const validationSchema = Yup.object({
     email: Yup.string().email("Invalid email address").required("Required"),
@@ -27,17 +28,17 @@ const LoginPage = () => {
       ) {
         navigate("/products", { state: { user: registeredUser } });
       } else {
-        setErrorMessage("Invalid email or password."); // Set error message for invalid credentials
-        setShowError(true); // Show error popup for invalid credentials
+        setErrorMessage("Invalid email or password.");
+        setShowError(true);
       }
     } else {
       setErrorMessage("No registered user found. Please register first.");
-      setShowError(true); // Show error popup for no registered user
+      setShowError(true);
     }
   };
 
   const closeErrorPopup = () => {
-    setShowError(false); // Close error popup
+    setShowError(false);
   };
 
   return (
@@ -69,6 +70,14 @@ const LoginPage = () => {
         onClose={closeErrorPopup}
         message={errorMessage}
       />
+
+      {/* Link to Registration page if no registered user */}
+      <p>
+        Not registered yet?{" "}
+        <Link to="/register" className="link">
+          Register here
+        </Link>
+      </p>
     </div>
   );
 };
